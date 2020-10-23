@@ -1,4 +1,17 @@
 //Psuedo Code
+//===============================================
+//Provide route to POST notes.html (./notes)
+
+  // write entered text to db.json file (storage) 
+
+    // Need to give each note a unique 'id'. 
+
+// retrieve notes stored from db.json file, GET and return the note to the client.
+
+//Provide route to GET index.html (./index)
+
+//
+
 
 
 
