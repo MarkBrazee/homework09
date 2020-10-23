@@ -1,16 +1,21 @@
-//Psuedo Code
+// Psuedo Code
 //===============================================
-//Provide route to POST notes.html (./notes)
+// Provide route to POST notes (save) to notes.html (./notes).
 
-  // write entered text to db.json file (storage) 
+  // write entered text to db.json file (storage). 
 
     // Need to give each note a unique 'id'. 
 
-// retrieve notes stored from db.json file, GET and return the note to the client.
+// Retrieve notes stored from db.json file, GET and return the note to the client.
 
-//Provide route to GET index.html (./index)
+// Provide route to GET index.html (./index).
 
-//
+// Need to read all notes in db.json file.
+
+// Delete a selected note with a given 'id' 
+  // rewrite the note to the db.json file.
+
+
 
 
 
@@ -25,6 +30,9 @@ const PORT = 3000;
 // Sets up the Express app to handle data parsing
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+
+//UUID to create random ID for each note
+const { v4: uuidv4 } = require ('uuid');
 
 //Check variable 
 const notes = require("./db/db.json")
