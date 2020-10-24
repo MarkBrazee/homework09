@@ -16,26 +16,27 @@
   // rewrite the note to the db.json file.
 
 
+app.get("/", function(req, res) {
+  res.json(path.join(__dirname, "public/index.html"));
+});
 
 
 
-
-//Express/ Path
+//Express/ Path/ Port
 const express = require("express");
 const path = require("path");
 
 const app = express(); // initializes Express for us to use
-const PORT = 3000;
+var PORT = process.env.PORT || 3001;
 
 // Sets up the Express app to handle data parsing
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-//UUID to create random ID for each note
-const { v4: uuidv4 } = require ('uuid');
-
 //Check variable 
 const notes = require("./db/db.json")
+
+
 
 const $noteTitle = $(".note-title");
 const $noteText = $(".note-textarea");
