@@ -21,9 +21,9 @@ Please contribute to enhance the functionality of this code. Please adhere to th
 
 No test files are provided for the user to test the application.
 
-### Link to Usage Video:
+### Link to Heroku deployment:
 
-http://www.github.com/MarkBrazee/homework07/blob/main/video.gif
+https://stormy-escarpment-79413.herokuapp.com/
 
 ### Questions? 
 
